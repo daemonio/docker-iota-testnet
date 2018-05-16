@@ -61,6 +61,6 @@ Abra a carteira:
 
     $ iota
 
-Configure a conexão no node. `Tools->yyyy->Custom`. Digite: `http://endereo-do-node:14265`
+Configure a conexão no node. `Tools->yyyy->Custom`. Digite: `http://endereco-do-node:14265`
 
 Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção. Espere um pouco e cheque o Balance novamente.
