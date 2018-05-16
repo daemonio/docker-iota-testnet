@@ -7,12 +7,9 @@ O arquivo `wallet-values.txt` contém 20 wallets com `10^9` iotas cada. Modifiqu
 
 ## Instalação
 
-1)
     git clone https://github.com/daemonio/docker-iota-testnet
     cd docker-iota-testnet
     docker build -t="docker-iota-testnet" .
-
-2)
     docker run --rm -d -p 14265:14265 image
 
 ## Instalação da carteira
