@@ -3,7 +3,7 @@ Docker da testnet da IOTA.
 
 ## Configurações
 
-O arquivo "wallet-values.txt" contém 20 wallets com 10^9 iotas cada. Modifique a vontade.
+O arquivo `wallet-values.txt` contém 20 wallets com `10^9` iotas cada. Modifique a vontade.
 
 ## Instalação
 
@@ -24,7 +24,7 @@ Obtenha sua wallet:
 
 ## Uso da carteira
 
-Primeiramente escolha um SEED no Snapshot.txt.
+Primeiramente escolha um SEED no `Snapshot.txt`.
 
     $ head Snapshot
 
@@ -34,6 +34,6 @@ Abra a carteira:
 
     ./iota
 
-Configure a conexão no node. Tools->yyyy->Custom. Digite: http://endereo-do-node:14265
+Configure a conexão no node. `Tools->yyyy->Custom`. Digite: `http://endereo-do-node:14265`
 
-Vai aparecer Balance 0. Vá para "Receive" e clique na opção. Espere um pouco e cheque o balance novamente.
+Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção. Espere um pouco e cheque o Balance novamente.
