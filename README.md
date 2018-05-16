@@ -33,7 +33,7 @@ Se aparecer erro, execute:
 
 Primeiramente escolha um SEED no `Snapshot.txt`.
 
-    $ head Snapshot
+    $ head Snapshot.txt
 
 Vamos escolher a SEED: XXX
 
