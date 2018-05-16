@@ -18,6 +18,10 @@ Obtenha sua wallet:
 
     wget https://github.com/iotaledger/wallet/releases/download/v2.5.7/iota_2.5.7_amd64.deb
     sudo dpkg -i iota_2.5.7_amd64.deb
+    
+Se aparecer erro, execute:
+
+    sudo apt -f install
 
 ## Uso da carteira
 
