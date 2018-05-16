@@ -29,7 +29,7 @@ Vamos escolher a SEED: XXX
 
 Abra a carteira:
 
-    ./iota
+    iota
 
 Configure a conexão no node. `Tools->yyyy->Custom`. Digite: `http://endereo-do-node:14265`
 
