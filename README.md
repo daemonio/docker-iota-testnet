@@ -23,7 +23,7 @@ Obtenha sua wallet:
 
 Primeiramente escolha um SEED no `Snapshot.txt`.
 
-    $ head Snapshot
+    head Snapshot
 
 Vamos escolher a SEED: XXX
 
