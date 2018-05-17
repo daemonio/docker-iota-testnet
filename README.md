@@ -14,7 +14,7 @@ O Snapshot é o arquivo que contém as carteiras (SEED's) do Tangle para a testn
 
 Esse projeto já vem com um Snapshot default nos arquivos `Snapshot.txt` e `Snapshot.log`. Caso você queira gerar outro Snapshot é preciso executar:
 
-     $ java -jar target/iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar SnapshotBuilder
+     $ java -jar iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar SnapshotBuilder
      
  Preencha as linhas com valores para as carteiras, e aperte `ENTER` duas vezes para terminar.
 
