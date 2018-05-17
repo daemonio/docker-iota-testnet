@@ -11,7 +11,7 @@ do
 
     sleep 5
 
-    let TRIALS--
+    TRIALS=$((TRIALS-1))
 done
 
 java -jar iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar Coordinator localhost $PORT
