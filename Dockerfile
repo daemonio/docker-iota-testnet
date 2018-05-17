@@ -9,4 +9,5 @@ RUN wget https://github.com/iotaledger/iri/releases/download/v1.4.2.1/iri-1.4.2.
 COPY Snapshot.txt .
 COPY Snapshot.log .
 COPY executa-iri.sh .
+COPY verifica-iri.sh .
 CMD ["sh", "executa-iri.sh"]
