@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PORT=14265
-TRIALS=20
+TRIALS=60
 
 while ! lsof -i :$PORT
 do
