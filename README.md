@@ -84,7 +84,6 @@ Abra a carteira:
 
     $ iota
 
-Configure a conexão no node. `Tools->yyyy->Custom`. Digite: `http://endereco-do-node:14265`. Para logar, digite
-a SEED escolhida.
+Configure a conexão no node. `Tools->Edit Node Configuration->Custom`. Digite: `http://endereco-do-node:14265`. Para logar, digite a SEED escolhida.
 
-Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção. Espere um pouco e cheque o Balance novamente.
+Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção `Attach To Tangle`. Espere um pouco e cheque o Balance novamente.
