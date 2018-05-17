@@ -10,8 +10,5 @@ RUN cat wallet-values.txt | java -jar iota-testnet-tools-0.1-SNAPSHOT-jar-with-d
 RUN wget https://github.com/iotaledger/iri/releases/download/v1.4.2.1/iri-1.4.2.1.jar
 COPY roda-servidor.sh .
 COPY espera-e-coordinator.sh .
+COPY executa-iri.sh .
 CMD ["sh", "executa-iri.sh"]
-#CMD ["sh", "./espera-e-coordinator.sh"]
-#CMD ["java", "-jar", "iri-1.4.2.1.jar", "-p", "14265", "--testnet", "--remote"]
-#RUN java -jar iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar Coordinator localhost 14265
-
