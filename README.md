@@ -86,4 +86,4 @@ Abra a carteira:
 
 Configure a conexão no node. `Tools->Edit Node Configuration->Custom`. Digite: `http://endereco-do-node:14265`. Para logar, digite a SEED escolhida.
 
-Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção `Attach To Tangle`. Espere um pouco e cheque o Balance novamente.
+Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção `Attach To Tangle`. Espere um pouco, pois pode demorar dependendo da velocidade do node. Quando aparecer `"Address Attached"` e cheque o `Balance` novamente.
