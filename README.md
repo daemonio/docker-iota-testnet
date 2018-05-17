@@ -27,7 +27,7 @@ Espere um pouco, o servidor demora para subir. Você pode testar se o servidor e
 
     $ curl -H "X-IOTA-API-Version: 1.4.1.6" -X POST -d '{"command":"getNodeInfo"}' http://localhost:14265
  
-Se aparecer "curl: (56) Recv failure: Connection reset by peer" é porque o servidor ainda não subiu. Se aparecer informações JSON é porque está tudo ok.
+Se aparecer `"curl: (56) Recv failure: Connection reset by peer"` é porque o servidor ainda não subiu. Se aparecer informações JSON é porque está tudo ok.
 
     {
     "appName": "IRI",
