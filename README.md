@@ -3,7 +3,8 @@ Docker da testnet da IOTA.
 
 ## Configurações
 
-O arquivo `wallet-values.txt` contém 20 wallets com `10^9` iotas cada. Modifique a vontade.
+O arquivo `wallet-values.txt` contém 20 wallets com `10^9` iotas cada. Se quiser mais wallets ou valores, modifique esse
+arquivo à vontade. Caso o modifique, não se esqueça de deixar duas linhas vazias no fim do arquivo (dois ENTER's).
 
 ## Instalação
 
