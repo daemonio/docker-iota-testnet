@@ -23,11 +23,11 @@ Esse projeto já vem com um Snapshot default nos arquivos `Snapshot.txt` e `Snap
     $ docker build -t="docker-iota-testnet" .
     $ docker run --rm -d -p 14265:14265 docker-iota-testnet
     
-Você pode testar se o servidor está funcionando, digitando:
+Espere um pouco, o servidor demora para subir. Você pode testar se o servidor está funcionando, digitando:
 
     $ curl -H "X-IOTA-API-Version: 1.4.1.6" -X POST -d '{"command":"getNodeInfo"}' http://localhost:14265
-    
-Se aparecer informações JSON é porque está tudo ok.
+ 
+Se aparecer "curl: (56) Recv failure: Connection reset by peer" é porque o servidor ainda não subiu. Se aparecer informações JSON é porque está tudo ok.
 
     {
     "appName": "IRI",
