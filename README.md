@@ -1,15 +1,25 @@
 # docker-iota-testnet
 Docker da testnet da IOTA.
 
-## Configurações
+## Primeiros passos
 
-O arquivo `wallet-values.txt` contém 20 wallets com `10^9` iotas cada. Se quiser mais wallets ou valores, modifique esse
-arquivo à vontade. Caso o modifique, não se esqueça de deixar duas linhas vazias no fim do arquivo (dois ENTER's).
-
-## Instalação
+Antes de tudo, baixe esse repositório e entre no diretório:
 
     $ git clone https://github.com/daemonio/docker-iota-testnet
     $ cd docker-iota-testnet
+
+## Configurações do Snapshot
+
+O Snapshot é o arquivo que contém as carteiras (SEED's) do Tangle para a testnet. Basicamente, se você quiser testar carteiras terá que usar as SEEDs do Snapshot.
+
+Esse projeto já vem com um Snapshot default no arquivo `Snapshot.txt` e `Snapshot.log`. Caso você queira gerar outro Snapshot é preciso executar:
+
+     $ java -jar target/iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar SnapshotBuilder
+     
+ Preencha as linhas com valores para as carteiras, e aperte `ENTER` duas vezes para terminar.
+
+## Build & Execução do docker
+    
     $ docker build -t="docker-iota-testnet" .
     $ docker run --rm -d -p 14265:14265 docker-iota-testnet
     
