@@ -1,7 +1,7 @@
 FROM debian
 MAINTAINER daemonio
 EXPOSE 14265
-RUN apt-get update && apt-get install -y procps wget vim git maven default-jre default-jdk
+RUN apt-get update && apt-get install -y procps wget vim lsof default-jre default-jdk
 RUN wget https://github.com/daemonio/docker-iota-testnet/raw/master/iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar
 COPY wallet-values.txt .
 RUN cat wallet-values.txt | java -jar iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar SnapshotBuilder
