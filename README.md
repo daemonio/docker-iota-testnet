@@ -8,7 +8,7 @@ Antes de tudo, baixe esse repositório e entre no diretório:
     $ git clone https://github.com/daemonio/docker-iota-testnet
     $ cd docker-iota-testnet
 
-## Configurações do Snapshot
+## Configuração do Snapshot
 
 O Snapshot é o arquivo que contém as carteiras (SEED's) do Tangle para a testnet. Basicamente, se você quiser testar carteiras terá que usar as SEEDs do Snapshot.
 
