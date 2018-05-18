@@ -7,20 +7,6 @@ Antes de tudo, baixe esse repositório e entre no diretório:
 
     $ git clone https://github.com/daemonio/docker-iota-testnet
     $ cd docker-iota-testnet
-    
-Baixe o `iri`, a testnet da IOTA:
-
-    $ wget https://github.com/daemonio/docker-iota-testnet/releases/download/v1.0/iri-1.4.2.1.jar   
-
-## Configuração do Snapshot (optativo)
-
-O Snapshot é o arquivo que contém as carteiras (SEED's) do Tangle para a testnet. Basicamente, se você quiser testar carteiras terá que usar as SEEDs do Snapshot.
-
-Esse projeto já vem com um Snapshot default nos arquivos `Snapshot.txt` e `Snapshot.log`. Caso você queira gerar outro Snapshot é preciso executar:
-
-     $ java -jar iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar SnapshotBuilder
-     
- Preencha as linhas com valores para as carteiras, e aperte `ENTER` duas vezes para terminar.
 
 ## Build & Execução do docker
     
