@@ -7,6 +7,10 @@ Antes de tudo, baixe esse repositório e entre no diretório:
 
     $ git clone https://github.com/daemonio/docker-iota-testnet
     $ cd docker-iota-testnet
+    
+Baixe o `iri`, a testnet da IOTA:
+
+    $ wget https://github.com/daemonio/docker-iota-testnet/releases/download/v1.0/iri-1.4.2.1.jar   
 
 ## Configuração do Snapshot (optativo)
 
