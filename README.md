@@ -1,23 +1,28 @@
 # docker-iota-testnet
-Docker da testnet da IOTA.
 
-## Primeiros passos
+Dockerized IOTA test-net.
 
-Antes de tudo, baixe esse repositório e entre no diretório:
+## First steps
+
+Before all, first download this repository and enter into the dir:
 
     $ git clone https://github.com/daemonio/docker-iota-testnet
     $ cd docker-iota-testnet
 
-## Build & Execução do docker
+## Build & Docker Run
     
     $ docker build -t="docker-iota-testnet" .
     $ docker run --rm -d -p 14265:14265 docker-iota-testnet
     
-Espere um pouco, o servidor demora para subir. Você pode testar se o servidor está funcionando, digitando:
+The build process download `iri-1.4.2.1.jar` from the main repository. This was the version the worked the most for me.
+
+Wait the server goes up. You can see if the server is up with the following command:
 
     $ curl -H "X-IOTA-API-Version: 1.4.1.6" -X POST -d '{"command":"getNodeInfo"}' http://localhost:14265
- 
-Se aparecer `"curl: (56) Recv failure: Connection reset by peer"` é porque o servidor ainda não subiu. Se aparecer informações JSON é porque está tudo ok.
+
+If you see `"curl: (56) Recv failure: Connection reset by peer"` it's because the server isn't up yet. Give it some time.
+
+If you see some JSON info, congratulations, the server is working:
 
     {
     "appName": "IRI",
@@ -39,20 +44,20 @@ Se aparecer `"curl: (56) Recv failure: Connection reset by peer"` é porque o se
     "duration": 27
     }
 
-## Instalação da carteira
+## Wallet Installation
 
-Obtenha sua wallet:
+Get your wallet and install it:
 
     $ wget https://github.com/iotaledger/wallet/releases/download/v2.5.7/iota_2.5.7_amd64.deb
     $ sudo dpkg -i iota_2.5.7_amd64.deb
     
-Se aparecer erro, execute:
+If you get any error, you can try:
 
     $ sudo apt -f install
 
-## Uso da carteira
+## Using the wallet
 
-Primeiramente escolha um SEED no `Snapshot.log`.
+First get a SEED from the `Snapshot.log` file:
     
     $ grep Seed Snapshot.log | head
     Seed: WSHQRZICNFQUQPAPYWKFPWKTWWBPQNMTDNBYSGFZURGBWONDQEBPLNUXJVQTPYNFJKKTFATIVJTBSAWUX
@@ -66,14 +71,16 @@ Primeiramente escolha um SEED no `Snapshot.log`.
     Seed: IYETTWUZHYSJZPMYWMOYNHDAWOQRCLZBQQWSHEWMPZRIL9NKCFZQIHHWDKFMVRFAD9YFYUMMCWBYYLOTO
     Seed: 9ZWG9PYDMWDPUZ9LOXZPIYCKZFOBAOEFPDYZXGHOXTLV9DWYFSBREURIMWPZMJZWV9RHUPUAQTBKXTIAN
 
-Vamos escolher a SEED:
+Let's use this SEED as an example:
 
     WSHQRZICNFQUQPAPYWKFPWKTWWBPQNMTDNBYSGFZURGBWONDQEBPLNUXJVQTPYNFJKKTFATIVJTBSAWUX
 
-Abra a carteira:
+Open the wallet:
 
     $ iota
 
-Configure a conexão no node. `Tools->Edit Node Configuration->Custom`. Digite: `http://endereco-do-node:14265`. Para logar, digite a SEED escolhida.
+Configure the node address in `Tools->Edit Node Configuration->Custom`. Type: `http://your-node-server:14265`. To log into
+your wallet just type the chosen SEED.
 
-Vai aparecer `Balance = 0`. Vá para `Receive` e clique na opção `Attach To Tangle`. Espere um pouco, pois pode demorar dependendo da velocidade do node. Quando aparecer `"Address Attached"` cheque o `Balance` novamente.
+You're going to see `Balance = 0` after logging in. Go to `Receive` and click in `Attach To Tangle`. Wait, this can take
+some time. When you see `"Address Attached"` you can `Balance` again, it will be 1Mi.
