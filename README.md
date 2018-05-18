@@ -4,7 +4,7 @@ Dockerized IOTA test-net.
 
 ## First steps
 
-Before all, first download this repository and enter into the dir:
+Before all, first clone this repository:
 
     $ git clone https://github.com/daemonio/docker-iota-testnet
     $ cd docker-iota-testnet
@@ -14,7 +14,8 @@ Before all, first download this repository and enter into the dir:
     $ docker build -t="docker-iota-testnet" .
     $ docker run --rm -d -p 14265:14265 docker-iota-testnet
     
-The build process download `iri-1.4.2.1.jar` from the main repository. This was the version the worked the most for me.
+The build process downloads `iri-1.4.2.1.jar` from the ~this~ repository. This was the version the worked the most for me. You
+can download the same version in the main repo.
 
 Wait the server goes up. You can see if the server is up with the following command:
 
