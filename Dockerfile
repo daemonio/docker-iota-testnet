@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     https://github.com/daemonio/docker-iota-testnet/raw/master/iota-testnet-tools-0.1-SNAPSHOT-jar-with-dependencies.jar
 #RUN wget https://github.com/iotaledger/iri/releases/download/v1.4.2.4/iri-1.4.2.4.jar
-RUN wget https://github.com/iotaledger/iri/releases/download/v1.4.2.1/iri-1.4.2.1.jar
+RUN wget https://github.com/daemonio/docker-iota-testnet/releases/download/v1.0/iri-1.4.2.1.jar
 COPY Snapshot.txt .
 COPY executa-iri.sh .
 COPY verifica-iri.sh .
