@@ -84,4 +84,4 @@ Configure the node address in `Tools->Edit Node Configuration->Custom`. Type: `h
 your wallet just type the chosen SEED.
 
 You're going to see `Balance = 0` after logging in. Go to `Receive` and click in `Attach To Tangle`. Wait, this can take
-some time. When you see `"Address Attached"` you can `Balance` again, it will be 1Mi.
+some time. When you see `"Address Attached"` you can see `Balance` again, it will be 1Mi.
