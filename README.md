@@ -14,10 +14,10 @@ Before all, first clone this repository:
     $ docker build -t="docker-iota-testnet" .
     $ docker run --rm -d -p 14265:14265 docker-iota-testnet
     
-The build process downloads `iri-1.4.2.1.jar` from *this* repository. This was the version the worked the most for me. You
+The build process downloads `iri-1.4.2.1.jar` from *this* repository. This was the version that worked the most for me. You
 can download the same version in the main repo.
 
-Wait the server goes up. You can see if the server is up with the following command:
+Wait untill server goes up. You can see if the server is up with the following command:
 
     $ curl -H "X-IOTA-API-Version: 1.4.1.6" -X POST -d '{"command":"getNodeInfo"}' http://localhost:14265
 
